@@ -8,8 +8,8 @@ printf "Setting username and password for Git ... (1/7)\n\n"
 GIT_USERNAME=gitName$Random
 GIT_EMAIL=a@b.c
 
-git config --global user.name "$GIT_USERNAME"
-git config --global user.email "$GIT_EMAIL"
+git config user.name "$GIT_USERNAME"
+git config user.email "$GIT_EMAIL"
 
 
 RESOURCE_GROUP=$(az group list --query "[0].name" -o tsv)
